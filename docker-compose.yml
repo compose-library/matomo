@@ -7,8 +7,6 @@ services:
     restart: always
     volumes:
       - ./db:/var/lib/mysql
-    environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=true
     env_file: .env
 
   app:
